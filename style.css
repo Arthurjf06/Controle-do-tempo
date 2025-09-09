@@ -1,0 +1,61 @@
+        /* Isso é CSS - usamos para estilizar a página */
+
+        /* Define que todo o corpo da página terá fundo branco */
+        body {
+            background-color: rgb(40, 148, 248);
+            margin: 0;
+            /* Remove as margens padrão */
+            padding: 0;
+            /* Remove os espaçamentos padrão */
+            height: 100vh;
+            /* Faz a página ter altura total da tela */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        .mensagem-central {
+            text-align: center;
+            color: #333;
+        }
+
+        .mensagem-central h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .mensagem-central p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        button {
+            background-color: #4CAF50;
+            /* Cor de fundo */
+            color: white;
+            /* Cor do texto */
+            padding: 12px 24px;
+            /* Espaçamento interno */
+            border: none;
+            /* Remove borda padrão */
+            border-radius: 4px;
+            /* Cantos arredondados */
+            font-size: 16px;
+            /* Tamanho do texto */
+            cursor: pointer;
+            /* Muda cursor para mão */
+            transition: 0.3s;
+            /* Suaviza transições */
+        }
+
+        /* Efeito ao passar o mouse */
+        button:hover {
+            background-color: #a04545;
+        }
+
+        /* Efeito quando clicado */
+        button:active {
+            transform: scale(0.98);
+        }
