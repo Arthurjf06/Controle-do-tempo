@@ -2,9 +2,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Nova Tela</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Organize os seus horarios!!!</h1>
     <a href="index.html">Voltar</a>
+    <div class="container-quadrinhos">
+    </div>
+    <script>
+    const horas = [
+    "00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00",
+    "12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00"
+];
+
+const containerMatriz = document.createElement('div');
+containerMatriz.className = 'container-matriz';
+
+for(let linha=0; linha<24; linha++) {
+    for(let coluna=0; coluna<7; coluna++) {
+        const quadrinho = document.createElement('div');
+        quadrinho.className = 'quadrinho';
+        if (coluna === 0) {
+            quadrinho.textContent = horas[linha]; // Primeira coluna: horário
+        } else {
+            quadrinho.textContent = horas[linha]; // Demais colunas: também horário, ou personalize
+        }
+        containerMatriz.appendChild(quadrinho);
+    }
+}
+
+document.body.appendChild(containerMatriz);
+    </script>
 </body>
 </html>

@@ -1,3 +1,3 @@
 function irParaNovaTela() {
-    window.location.href = "novaTela.html";
+    window.location.href = "novaTela.html"; 
 }
